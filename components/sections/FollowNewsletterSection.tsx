@@ -11,7 +11,7 @@ export default function FollowNewsletterSection() {
         <p className="section-subtitle text-xs font-semibold uppercase tracking-[0.2em]">
           Follow Newsletter
         </p>
-        <h2 className="section-title mt-3">Stay In The Pilot Loop</h2>
+        <h2 className="section-title mt-3">Stay In The Power Loop</h2>
         <p className="mt-3 max-w-3xl text-sm uppercase tracking-[0.08em] text-[color:var(--foreground)]/80 sm:text-base">
           Get team updates, game reminders, and behind-the-scenes drops straight
           to your inbox.

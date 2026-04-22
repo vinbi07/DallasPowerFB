@@ -203,8 +203,8 @@ export const clubData: ClubData = {
     { name: "Champagne rain", logo: "/logos/ChampagneRain-logo-square.png", href: "https://champagnerain.com" },
   ],
   products: [
-    { name: "Pilots Home Jersey", price: "$69.00", image: "/placeholders/placeholder-images-image_large.webp" },
-    { name: "Pilots Travel Hoodie", price: "$54.00", image: "/placeholders/placeholder-images-image_large.webp" },
+    { name: "Dallas Power Home Jersey", price: "$69.00", image: "/placeholders/placeholder-images-image_large.webp" },
+    { name: "Dallas Power Travel Hoodie", price: "$54.00", image: "/placeholders/placeholder-images-image_large.webp" },
     { name: "Game Day Cap", price: "$28.00", image: "/placeholders/placeholder-images-image_large.webp" },
     { name: "Training Shorts", price: "$32.00", image: "/placeholders/placeholder-images-image_large.webp" },
     { name: "Supporter T-Shirt", price: "$24.00", image: "/placeholders/placeholder-images-image_large.webp" },

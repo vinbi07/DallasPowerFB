@@ -107,6 +107,12 @@ function isPilotsTeam(teamName: string) {
   return normalizedTeam.includes(pilotsNormalized);
 }
 
+function isDallasPowerTeam(teamName: string) {
+  const normalizedTeam = teamName.replace(/[^a-z]/gi, "").toLowerCase();
+  const dallasPowerNormalized = "dallaspower";
+  return normalizedTeam.includes(dallasPowerNormalized);
+}
+
 export default function GameRow({ game }: GameRowProps) {
   const { weekday, month, day, year } = formatDateParts(game.date);
   const { homeTeam, awayTeam } = parseTeams(game.matchup);
@@ -114,6 +120,8 @@ export default function GameRow({ game }: GameRowProps) {
   const location = getLocationFromTeams(homeTeam, awayTeam, game.status);
   const isHomePilots = isPilotsTeam(homeTeam);
   const isAwayPilots = isPilotsTeam(awayTeam);
+  const isHomeDallasPower = isDallasPowerTeam(homeTeam);
+  const isAwayDallasPower = isDallasPowerTeam(awayTeam);
   const pilotsSide = isHomePilots ? "home" : isAwayPilots ? "away" : undefined;
   const pilotsWon =
     game.status === "Final" &&
@@ -180,8 +188,18 @@ export default function GameRow({ game }: GameRowProps) {
             {isHomePilots ? (
               <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
                 <Image
-                  src="/logos/DallasPowerLogo.png"
+                  src="/logos/AFWPLogo.png"
                   alt="Fort Worth Arlington Pilots logo"
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 object-contain"
+                />
+              </span>
+            ) : isHomeDallasPower ? (
+              <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
+                <Image
+                  src="/logos/DallasPowerLogo.png"
+                  alt="Dallas Power logo"
                   width={36}
                   height={36}
                   className="h-9 w-9 object-contain"
@@ -216,8 +234,18 @@ export default function GameRow({ game }: GameRowProps) {
             {isAwayPilots ? (
               <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
                 <Image
-                  src="/logos/DallasPowerLogo.png"
+                  src="/logos/AFWPLogo.png"
                   alt="Fort Worth Arlington Pilots logo"
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 object-contain"
+                />
+              </span>
+            ) : isAwayDallasPower ? (
+              <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
+                <Image
+                  src="/logos/DallasPowerLogo.png"
+                  alt="Dallas Power logo"
                   width={36}
                   height={36}
                   className="h-9 w-9 object-contain"
