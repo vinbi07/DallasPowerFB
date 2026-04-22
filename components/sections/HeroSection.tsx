@@ -63,8 +63,10 @@ export default function HeroSection({ clubName, tagline }: HeroSectionProps) {
             priority
             className="h-auto w-full mb-16 max-w-[500px] object-contain drop-shadow-[0_10px_30px_color-mix(in_srgb,var(--accent-shadow)_85%,transparent)]"
             style={{
-              maskImage: "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
-              WebkitMaskImage: "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
+              maskImage:
+                "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
             }}
           />
         </motion.div>
