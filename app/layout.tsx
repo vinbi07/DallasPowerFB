@@ -9,32 +9,32 @@ const teamSans = Barlow_Condensed({
   subsets: ["latin"],
 });
 
-const previewBannerImage = "/FWABanner%20Web.png";
+const previewBannerImage = "/logos/DPBannerFinal.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
-  title: "Fort Worth-Arlington Pilots",
+  title: "Dallas Power",
   description:
-    "Official home of the Fort Worth-Arlington Pilots with roster profiles, schedule updates, stats, and team news.",
+    "Official home of Dallas Power with roster profiles, schedule updates, stats, and team news.",
   openGraph: {
-    title: "Fort Worth-Arlington Pilots",
+    title: "Dallas Power",
     description:
-      "Official home of the Fort Worth-Arlington Pilots with roster profiles, schedule updates, stats, and team news.",
+      "Official home of Dallas Power with roster profiles, schedule updates, stats, and team news.",
     type: "website",
     images: [
       {
         url: previewBannerImage,
-        alt: "Fort Worth Arlington Pilots banner",
+        alt: "Dallas Power banner",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fort Worth-Arlington Pilots",
+    title: "Dallas Power",
     description:
-      "Official home of the Fort Worth-Arlington Pilots with roster profiles, schedule updates, stats, and team news.",
+      "Official home of Dallas Power with roster profiles, schedule updates, stats, and team news.",
     images: [previewBannerImage],
   },
   icons: {
