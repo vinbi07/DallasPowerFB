@@ -56,12 +56,16 @@ export default function HeroSection({ clubName, tagline }: HeroSectionProps) {
           className="mx-auto flex max-w-5xl justify-center"
         >
           <Image
-            src="/logos/AWFPLogo.png"
+            src="/logos/DallasPowerLogo.png"
             alt={`${clubName} logo`}
             width={920}
             height={560}
             priority
-            className="h-auto w-full max-w-[500px] object-contain drop-shadow-[0_10px_30px_color-mix(in_srgb,var(--accent-shadow)_65%,transparent)]"
+            className="h-auto w-full mb-16 max-w-[500px] object-contain drop-shadow-[0_10px_30px_color-mix(in_srgb,var(--accent-shadow)_85%,transparent)]"
+            style={{
+              maskImage: "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse at center, black 0%, black 70%, transparent 100%)",
+            }}
           />
         </motion.div>
         <motion.p

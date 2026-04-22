@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f8fa;
+  --background: #f5f7ff;
   --page-background: var(--background);
-  --foreground: #0f172a;
+  --foreground: #223B86;
   --surface: #ffffff;
-  --surface-soft: #f1f5f9;
-  --surface-strong: #e2e8f0;
-  --title-color: #1b1d40;
-  --subtitle-color: #bf3e21;
-  --outline-soft: #ce462b;
-  --outline-deep: #732119;
-  --accent-shadow: #0f172a;
+  --surface-soft: #f0f4ff;
+  --surface-strong: #e8edff;
+  --title-color: #223B86;
+  --subtitle-color: #1135DA;
+  --outline-soft: #1135DA;
+  --outline-deep: #223B86;
+  --accent-shadow: #223B86;
   --card-border: color-mix(in srgb, var(--outline-soft) 58%, transparent);
   --panel-border: color-mix(in srgb, var(--outline-soft) 46%, transparent);
   --panel-shadow: 0 10px 26px color-mix(in srgb, var(--accent-shadow) 22%, transparent);
@@ -19,18 +19,18 @@
   --glow-shadow: 0 0 0 1px color-mix(in srgb, var(--subtitle-color) 20%, transparent);
   --button-surface: color-mix(in srgb, var(--surface) 72%, transparent);
   --button-surface-hover: var(--surface);
-  --button-primary-bg: #1b1d40;
-  --button-primary-text: #f7f8fa;
+  --button-primary-bg: #223B86;
+  --button-primary-text: #f5f7ff;
   --button-primary-border: color-mix(in srgb, var(--outline-soft) 88%, transparent);
   --button-primary-shadow: 0 0 22px color-mix(in srgb, var(--accent-shadow) 35%, transparent);
-  --highlight-bg: var(--title-color);
-  --highlight-text: #f7f8fa;
-  --hero-overlay: color-mix(in srgb, #0f172a 54%, transparent);
+  --highlight-bg: #1135DA;
+  --highlight-text: #f5f7ff;
+  --hero-overlay: color-mix(in srgb, #223B86 54%, transparent);
   --hero-gradient: radial-gradient(
     circle at 50% 12%,
-    color-mix(in srgb, var(--subtitle-color) 42%, transparent),
-    color-mix(in srgb, #0f172a 22%, transparent) 45%,
-    color-mix(in srgb, #020617 72%, transparent) 100%
+    color-mix(in srgb, #1135DA 42%, transparent),
+    color-mix(in srgb, #223B86 22%, transparent) 45%,
+    color-mix(in srgb, #040423 72%, transparent) 100%
   );
   --hero-fade: color-mix(in srgb, var(--background) 25%, transparent);
   --hero-text: #f8fafc;
@@ -39,31 +39,31 @@
   --broadcast-surface: color-mix(in srgb, var(--surface) 90%, transparent);
   --status-win: #0c5832;
   --status-win-shadow: 0 0 0 1px color-mix(in srgb, var(--status-win) 34%, transparent);
-  --theme-ring: color-mix(in srgb, var(--subtitle-color) 62%, transparent);
+  --theme-ring: color-mix(in srgb, #1135DA 62%, transparent);
   --social-icon-filter: none;
 }
 
 html[data-theme="dark"] {
-  --background: #0f1226;
+  --background: #040423;
   --page-background: linear-gradient(
     132deg,
-    #0a0d1b 0%,
-    #171c34 18%,
-    #262d4d 34%,
-    #1b2240 50%,
-    #10152a 66%,
-    #2a3153 82%,
-    #11162c 100%
+    #040423 0%,
+    #0a0d1b 18%,
+    #1a1f4d 34%,
+    #0f132f 50%,
+    #050824 66%,
+    #1a2050 82%,
+    #08092a 100%
   );
   --foreground: #f7f8fa;
-  --surface: #1b1d40;
-  --surface-soft: #23285a;
-  --surface-strong: #2f3675;
+  --surface: #1a1f4d;
+  --surface-soft: #252a5a;
+  --surface-strong: #353d72;
   --title-color: #f7f8fa;
-  --subtitle-color: #ff8f5c;
-  --outline-soft: #7d86ff;
-  --outline-deep: #404898;
-  --accent-shadow: #050816;
+  --subtitle-color: #4279FD;
+  --outline-soft: #4279FD;
+  --outline-deep: #1a2060;
+  --accent-shadow: #000002;
   --card-border: color-mix(in srgb, var(--outline-soft) 42%, transparent);
   --panel-border: color-mix(in srgb, var(--outline-soft) 32%, transparent);
   --panel-shadow: 0 14px 32px color-mix(in srgb, var(--accent-shadow) 65%, transparent);
@@ -71,27 +71,27 @@ html[data-theme="dark"] {
   --glow-shadow: 0 0 0 1px color-mix(in srgb, var(--subtitle-color) 30%, transparent);
   --button-surface: color-mix(in srgb, var(--surface) 68%, transparent);
   --button-surface-hover: color-mix(in srgb, var(--surface-strong) 84%, transparent);
-  --button-primary-bg: color-mix(in srgb, #1b1d40 92%, #2f3675 8%);
+  --button-primary-bg: #1a1f4d;
   --button-primary-text: #f7f8fa;
   --button-primary-border: color-mix(in srgb, var(--outline-soft) 76%, transparent);
-  --button-primary-shadow: 0 0 22px color-mix(in srgb, #050816 46%, transparent);
-  --highlight-bg: #bf3e21;
+  --button-primary-shadow: 0 0 22px color-mix(in srgb, #000002 46%, transparent);
+  --highlight-bg: #4279FD;
   --highlight-text: #f7f8fa;
-  --hero-overlay: color-mix(in srgb, #050816 60%, transparent);
+  --hero-overlay: color-mix(in srgb, #000002 60%, transparent);
   --hero-gradient: radial-gradient(
     circle at 50% 12%,
-    color-mix(in srgb, var(--subtitle-color) 28%, transparent),
-    color-mix(in srgb, var(--surface-strong) 28%, transparent) 45%,
-    color-mix(in srgb, #050816 78%, transparent) 100%
+    color-mix(in srgb, #4279FD 28%, transparent),
+    color-mix(in srgb, #353d72 28%, transparent) 45%,
+    color-mix(in srgb, #000002 78%, transparent) 100%
   );
   --hero-fade: color-mix(in srgb, var(--background) 34%, transparent);
   --hero-text: #f5f7ff;
-  --hero-text-shadow: 0 4px 18px color-mix(in srgb, #050816 78%, transparent);
+  --hero-text-shadow: 0 4px 18px color-mix(in srgb, #000002 78%, transparent);
   --logo-chip-bg: color-mix(in srgb, var(--surface-soft) 86%, transparent);
   --broadcast-surface: color-mix(in srgb, var(--surface) 88%, transparent);
   --status-win: #0c5832;
   --status-win-shadow: 0 0 0 1px color-mix(in srgb, var(--status-win) 34%, transparent);
-  --theme-ring: color-mix(in srgb, var(--outline-soft) 54%, transparent);
+  --theme-ring: color-mix(in srgb, #4279FD 54%, transparent);
   --social-icon-filter: brightness(0) invert(1);
 }
 
@@ -166,6 +166,14 @@ div {
 
 html[data-theme="light"] .social-icon {
   filter: none !important;
+}
+
+html[data-theme="dark"] .social-icon {
+  filter: brightness(0) saturate(100%) invert(100%) contrast(105%) !important;
+}
+
+html[data-theme="light"] .social-icon {
+  filter: invert(0.15) sepia(0.8) hue-rotate(220deg) brightness(0.9) saturate(1.3) !important;
 }
 
 html[data-theme="dark"] .social-icon {

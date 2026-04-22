@@ -43,7 +43,7 @@ export default function GlobalNav({
           aria-label={`${clubName} home`}
         >
           <Image
-            src="/logos/AWFPLogo.png"
+            src="/logos/DallasPowerLogo.png"
             alt={`${clubName} logo`}
             width={300}
             height={180}

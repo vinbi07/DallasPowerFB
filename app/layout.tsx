@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     images: [previewBannerImage],
   },
   icons: {
-    icon: "/logos/AWFPLogo.png",
-    shortcut: "/logos/AWFPLogo.png",
-    apple: "/logos/AWFPLogo.png",
+    icon: "/logos/DallasPowerLogo.png",
+    shortcut: "/logos/DallasPowerLogo.png",
+    apple: "/logos/DallasPowerLogo.png",
   },
 };
 

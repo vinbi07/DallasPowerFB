@@ -1,8 +1,8 @@
 import { ClubData } from "@/lib/types";
 
 export const clubData: ClubData = {
-  clubName: "Forth Worth Arlington Pilots",
-  tagline: "Relentless effort. One identity.",
+  clubName: "Dallas Power",
+  tagline: "Texas Women. Texas Power.",
   description:
     "This is a placeholder club overview. Replace this copy with your team mission, culture statement, and season focus.",
   about: {

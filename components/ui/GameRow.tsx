@@ -180,7 +180,7 @@ export default function GameRow({ game }: GameRowProps) {
             {isHomePilots ? (
               <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
                 <Image
-                  src="/logos/AWFPLogo.png"
+                  src="/logos/DallasPowerLogo.png"
                   alt="Fort Worth Arlington Pilots logo"
                   width={36}
                   height={36}
@@ -216,7 +216,7 @@ export default function GameRow({ game }: GameRowProps) {
             {isAwayPilots ? (
               <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden">
                 <Image
-                  src="/logos/AWFPLogo.png"
+                  src="/logos/DallasPowerLogo.png"
                   alt="Fort Worth Arlington Pilots logo"
                   width={36}
                   height={36}
