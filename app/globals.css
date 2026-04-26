@@ -180,6 +180,14 @@ html[data-theme="dark"] .social-icon {
   filter: brightness(0) saturate(100%) invert(100%) contrast(105%) !important;
 }
 
+html[data-theme="light"] .partner-logo {
+  filter: none !important;
+}
+
+html[data-theme="dark"] .partner-logo {
+  filter: brightness(0) saturate(100%) invert(100%) contrast(105%) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
